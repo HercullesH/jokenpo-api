@@ -10,6 +10,8 @@ instalar o pacote global `npm i -g mocha`
 
 para rodar os testes o comando é: `npm run test`
 
+Utilizei testes unitários e de integração para testar funções e a api como um todo.
+
 para rodar o servidor em desenvolvimento: `npm run dev`
 
 o servidor irá rodar na porta 3000
