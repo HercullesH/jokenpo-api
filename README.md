@@ -5,9 +5,11 @@
 
 instalar as dependências `npm i`.
 instalar o pacote global `npm i -g nodemon`
+
 instalar o pacote global `npm i -g mocha`
 
 para rodar os testes o comando é: `mocha`
+
 para rodar o servidor em desenvolvimento: `npm run dev`
 
 Como solução do problema utilizei um dicionário para verificar o resultado. Dado um input do jogador 1 qual o input do jogador 2 para ele vencer.
