@@ -1,6 +1,6 @@
 class ErrorMessage {
 	static validatorMessage(property) {
-		return `a propriedade '${property}' é inválida.`;
+		return `Selecione corretamente a opção do ${property}`;
 	}
 }
 
