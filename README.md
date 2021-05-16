@@ -8,7 +8,7 @@ instalar o pacote global `npm i -g nodemon`
 
 instalar o pacote global `npm i -g mocha`
 
-para rodar os testes o comando é: `mocha`
+para rodar os testes o comando é: `npm run test`
 
 para rodar o servidor em desenvolvimento: `npm run dev`
 

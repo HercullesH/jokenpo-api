@@ -26,7 +26,7 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?playr1=rack&player2=scissors`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 1'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 1'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
@@ -36,7 +36,7 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?player1=scissors&layer2=rack`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 2'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 2'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
@@ -46,8 +46,8 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?playr1=test&plaer2=tes`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 1'));
-					chai.expect(res.body[1]).to.equal(ErrorMessage.validatorMessage('player 2'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 1'));
+					chai.expect(res.body[1]).to.equal(ErrorMessage.validatorMessage('Jogador 2'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
@@ -59,7 +59,7 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?player1=rack&player2=scissors`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 1'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 1'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
@@ -69,7 +69,7 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?player1=scissors&player2=rack`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 2'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 2'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
@@ -79,8 +79,8 @@ describe('jokenpo integration tests', () => {
 			chai.request(app.app)
 				.get(`${url}?player1=test&player2=tes`)
 				.end((err, res) => {
-					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('player 1'));
-					chai.expect(res.body[1]).to.equal(ErrorMessage.validatorMessage('player 2'));
+					chai.expect(res.body[0]).to.equal(ErrorMessage.validatorMessage('Jogador 1'));
+					chai.expect(res.body[1]).to.equal(ErrorMessage.validatorMessage('Jogador 2'));
 					chai.expect(res).to.have.status(422);
 					done();
 				});
