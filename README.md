@@ -12,6 +12,8 @@ para rodar os testes o comando é: `mocha`
 
 para rodar o servidor em desenvolvimento: `npm run dev`
 
+o servidor irá rodar na porta 3000
+
 Como solução do problema utilizei um dicionário para verificar o resultado. Dado um input do jogador 1 qual o input do jogador 2 para ele vencer.
 
 Caso o input não for encontrado o jogador 2 é o vencedor.
